@@ -68,7 +68,6 @@ html,body {
   position: absolute;
   right: -40px;
   top: 0;
-  bottom: 0;
   margin: auto;
   line-height: 80px;
   text-align: center;
@@ -121,14 +120,30 @@ html,body {
 .nav ul {
   display: none;
   position: absolute;
-  left: 100%;
-  width: 300px;
-  top: 0;
+  width: 100%;
+  top: 10%;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 5px 5px 10px hsla(240, 40%, 15%, 0.6);
 }
 .nav li:hover > ul {
   display: block;
+}
+@media screen and (min-width:1023px) {
+  .side-menu {
+    transform: translateX(0);
+  }
+  .side-menu label {
+    opacity: 0;
+  }
+  .nav ul {
+    display: none;
+    position: absolute;
+    left: 100%;
+    width: 300px;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 10px hsla(240, 40%, 15%, 0.6);
+  }
 }
 /* side-list-end */
 
@@ -148,8 +163,10 @@ ul{
   list-style: none;
 }
 .footer-col{
-  width: 25%;
-  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 30% 30px 30%;
 }
 .footer-col h4{
   font-size: 18px;
@@ -186,6 +203,7 @@ ul{
   color: #ffffff; /*小標選取後顏色*/
   padding-left: 10px; /*小標選取後移動距離*/
 }
+
 .footer-col .social-links a{
   display: inline-block;
   height: 40px;
@@ -203,15 +221,22 @@ ul{
   background-color: #ffffff; /*icon選取後背景顏色*/
 }
 
-@media(max-width: 767px){
+@media screen and (min-width:1023px) {
+  .footer {
+    margin-left: 300px;
+    transition: 0.3s;
+  }
   .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
+    max-width: 25%;
+    margin: 0 0 30px 0;
   }
 }
-@media screen and (max-width: 574px){
+@media screen and (min-width: 767px){
   .footer-col{
-    display: flex;
-    width: 100%;
+    width: 50%;
+    margin: 0 0 30px 0;
+  }
+  .footer-col .social-links h4 {
+    margin: 0 20% 30px 20%;
   }
 }

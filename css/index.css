@@ -1,18 +1,21 @@
 /* header-ads-start */
 header{
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .slider{
-  width: 800px;
-  height: 500px;
+  margin: 50px 0;
+  max-width: 800px;
+  max-height: 500px;
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
 }
 .slides{
   width: 500%;
-  height: 500px;
+  height: 100%;
   display: flex;
 }
 .slides input{
@@ -23,15 +26,17 @@ header{
   transition: 2s;
 }
 .slide img{
-  width: 800px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
 }
 /* css for manual slide navigation */
 
 .navigation-manual{
   position: absolute;
-  width: 800px;
+  max-width: 800px;
   margin-top: -40px;
+  left: 50%;
+  right: 50%;
   display: flex;
   justify-content: center;
 }
@@ -64,10 +69,12 @@ header{
 /* css for automatic navigation */
 .navigation-auto{
   position: absolute;
+  max-width: 100%;
+  bottom: 25px;
+  left: 50%;
+  right: 50%;
   display: flex;
-  width: 800px;
   justify-content: center;
-  margin-top: 460px;
 }
 
 .navigation-auto div{
@@ -80,16 +87,17 @@ header{
   margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
+#radio1:checked ~ .navigation-auto .auto-btn1,
+#radio2:checked ~ .navigation-auto .auto-btn2,
+#radio3:checked ~ .navigation-auto .auto-btn3,
+#radio4:checked ~ .navigation-auto .auto-btn4
+{
   background: #40D3DC;
 }
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background: #40D3DC;
+/* 電腦螢幕 1024-1*/
+@media screen and (min-width:1023px) {
+  header {
+    width: 100%;
+    margin-left: 150px;
+  }
 }
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background: #40D3DC;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background: #40D3DC;
-}
-/* header-ads-end */
