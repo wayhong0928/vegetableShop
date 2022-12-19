@@ -105,6 +105,23 @@ html,body {
   right: 10px;
   top: 0;
 }
+/* welcome user */
+.nav li:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.nav li p {
+  color: #eeeeee;
+  padding-right: 20px;
+}
+.nav li img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
 .nav a .fa-solid {
   margin-right: -1.1em;
   transform: scale(0);
@@ -117,17 +134,6 @@ html,body {
 .nav li:hover > a {
   background-color: rgba(0, 0, 0, 0.3);
 }
-.nav ul {
-  display: none;
-  position: absolute;
-  width: 100%;
-  top: 10%;
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 5px 5px 10px hsla(240, 40%, 15%, 0.6);
-}
-.nav li:hover > ul {
-  display: block;
-}
 @media screen and (min-width:1023px) {
   .side-menu {
     transform: translateX(0);
@@ -135,23 +141,14 @@ html,body {
   .side-menu label {
     opacity: 0;
   }
-  .nav ul {
-    display: none;
-    position: absolute;
-    left: 100%;
-    width: 300px;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 5px 5px 10px hsla(240, 40%, 15%, 0.6);
-  }
 }
 /* side-list-end */
 
 /* footer */
 .footer{
-  max-width: 100%;
+  width: 100%;
   background-color: #24262b;
-  padding: 70px 0;
+  padding: 50px 0;
 }
 .footer-container{
   display: flex;
@@ -232,6 +229,9 @@ ul{
   }
 }
 @media screen and (min-width: 767px){
+  .footer {
+    padding: 70px 0;
+  }
   .footer-col{
     width: 50%;
     margin: 0 0 30px 0;
