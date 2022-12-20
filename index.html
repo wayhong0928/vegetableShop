@@ -13,205 +13,209 @@
 <title>蔬菜網</title>
 </head>
 <body>
-<!-- side-list-start -->
-<!-- 必須寫在body內最上面 -->
-<input type="checkbox" name="" id="side-menu-switch" />
-<aside class="side-menu">
-  <form action="">
-    <input type="search" placeholder="請輸入關鍵字" />
-    <button><i class="fa-solid fa-magnifying-glass"></i></button>
-  </form>
-  <ul class="nav">
-    <li>
-      <!-- user image -->
-      <p>歡迎回來，<span>user</span></p>
-      <img src="https://picsum.photos/70/70?random=1">
-    </li>
-    <li>
-      <a href="#"><i class="fa-solid fa-code"></i>回到首頁</a>
-    </li>
-    <li>
-      <a href="#"><i class="fa-solid fa-circle-up"></i>商品瀏覽</a>
-    </li>
-    <li>
-      <a href="#"><i class="fa-solid fa-fish"></i>購物車</a>
-    </li>
-    <li>
-      <a href="#"><i class="fa-solid fa-print"></i>訂單查詢</a>
-    </li>
-    <li>
-      <a href="#"><i class="fa-solid fa-gear"></i>會員管理</a>
-    </li>
-    <li>
-      <a href="#"><i class="fa-solid fa-gear"></i>會員登入(登出)</a>
-    </li>
-  </ul>
-  <label for="side-menu-switch">
-    <i class="fa-solid fa-greater-than"></i>
-  </label>
-</aside>
-<!-- side-list-end -->
-<!-- header-ads-start -->
-<header>
-  <div class="slider">
-    <div class="slides">
-        <!-- 按鈕 -->
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
+  <input type="checkbox" name="" id="side-menu-switch" />
+  <aside class="side-menu">
+    <form action="">
+      <input type="search" placeholder="請輸入關鍵字" />
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    <ul class="nav">
+      <li>
+        <!-- user image -->
+        <p>歡迎回來，<span>user</span></p>
+        <img src="https://picsum.photos/70/70?random=1">
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-code"></i>回到首頁</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-circle-up"></i>商品瀏覽</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-fish"></i>購物車</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-print"></i>訂單查詢</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-gear"></i>關於我們</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-gear"></i>會員管理</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-gear"></i>會員登入(登出)</a>
+      </li>
+    </ul>
+    <label for="side-menu-switch">
+      <i class="fa-solid fa-greater-than"></i>
+    </label>
+  </aside>
+  <main class="content">
+  <!-- header-ads-start -->
+    <header>
+      <div class="slider">
+        <div class="slides">
+            <!-- 按鈕 -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
 
-        <!-- 滑動 圖片 -->
-        <div class="slide first">
-          <img src="https://picsum.photos/800/400?random=1">
-        </div>
-        <div class="slide">
-          <img src="https://picsum.photos/800/400?random=2">
-        </div>
-        <div class="slide">
-          <img src="https://picsum.photos/800/400?random=3">
-        </div>
-        <div class="slide">
-          <img src="https://picsum.photos/800/400?random=4">
-        </div>
+            <!-- 滑動 圖片 -->
+            <div class="slide first">
+              <img src="https://picsum.photos/800/400?random=1">
+            </div>
+            <div class="slide">
+              <img src="https://picsum.photos/800/400?random=2">
+            </div>
+            <div class="slide">
+              <img src="https://picsum.photos/800/400?random=3">
+            </div>
+            <div class="slide">
+              <img src="https://picsum.photos/800/400?random=4">
+            </div>
 
-        <!-- 自動切換 -->
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-          <div class="auto-btn4"></div>
-        </div>
+            <!-- 自動切換 -->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
 
+          </div>
+          <!-- manual navigation -->
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
       </div>
-      <!-- manual navigation -->
-      <div class="navigation-manual">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        <label for="radio4" class="manual-btn"></label>
-      </div>
-  </div>
-</header>
-<script>
-  var counter = 1;
-  setInterval(function(){
-    document.getElementById('radio' + counter).checked = true;
-    counter++;
-    if(counter > 4){
-      counter = 1
-    }
-  }, 5000); /*數字控制切換頻率 單位:毫秒*/
-</script>
-<!-- header-ads-end -->
+    </header>
+    <!-- header-script -->
+    <script>
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1
+        }
+      }, 5000); /*數字控制切換頻率 單位:毫秒*/
+    </script>
+  <!-- header-ads-end -->
 
-<!-- 可編輯區-start -->
-<section class="commodity-wrap">
-  <div class="commodity-item">
-    <img src="https://picsum.photos/300/200?random=1" />
-    <h3>title</h3>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
-    </p>
-    <div class="shopping-car">
-      <!-- 要讓user可以選擇加入購物車的商品數量 -->
-      <button class="add-car">加入購物車</button>
-      <span class="now-stock">目前庫存：</span>
+  <!-- 可編輯區-start -->
+  <!-- commodity-wrap 後端處理 -->
+  <section class="commodity-wrap">
+    <div class="commodity-item">
+      <img src="https://picsum.photos/300/200?random=1" />
+      <h3>title</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
+      </p>
+      <div class="shopping-car">
+        <!-- 要讓user可以選擇加入購物車的商品數量 -->
+        <button class="add-car">加入購物車</button>
+        <span class="now-stock">目前庫存：</span>
+      </div>
     </div>
-  </div>
-  <div class="commodity-item">
-    <!-- 要讓user可以選擇加入購物車的商品數量 -->
-    <img src="https://picsum.photos/300/200?random=2" />
-    <h3>title</h3>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
-    </p>
-    <div class="shopping-car">
+    <div class="commodity-item">
       <!-- 要讓user可以選擇加入購物車的商品數量 -->
-      <button class="add-car">加入購物車</button>
-      <span class="now-stock">目前庫存：</span>
+      <img src="https://picsum.photos/300/200?random=2" />
+      <h3>title</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
+      </p>
+      <div class="shopping-car">
+        <!-- 要讓user可以選擇加入購物車的商品數量 -->
+        <button class="add-car">加入購物車</button>
+        <span class="now-stock">目前庫存：</span>
+      </div>
     </div>
-  </div>
-  <div class="commodity-item">
-    <img src="https://picsum.photos/300/200?random=3" />
-    <h3>title</h3>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
-    </p>
-    <div class="shopping-car">
-      <!-- 要讓user可以選擇加入購物車的商品數量 -->
-      <button class="add-car">加入購物車</button>
-      <span class="now-stock">目前庫存：</span>
+    <div class="commodity-item">
+      <img src="https://picsum.photos/300/200?random=3" />
+      <h3>title</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
+      </p>
+      <div class="shopping-car">
+        <!-- 要讓user可以選擇加入購物車的商品數量 -->
+        <button class="add-car">加入購物車</button>
+        <span class="now-stock">目前庫存：</span>
+      </div>
     </div>
-  </div>
-  <div class="commodity-item">
-    <img src="https://picsum.photos/300/200?random=4" />
-    <h3>title</h3>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
-    </p>
-    <div class="shopping-car">
-      <!-- 要讓user可以選擇加入購物車的商品數量 -->
-      <button class="add-car">加入購物車</button>
-      <span class="now-stock">目前庫存：</span>
+    <div class="commodity-item">
+      <img src="https://picsum.photos/300/200?random=4" />
+      <h3>title</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
+      </p>
+      <div class="shopping-car">
+        <!-- 要讓user可以選擇加入購物車的商品數量 -->
+        <button class="add-car">加入購物車</button>
+        <span class="now-stock">目前庫存：</span>
+      </div>
     </div>
-  </div>
-  <div class="commodity-item">
-    <img src="https://picsum.photos/300/200?random=5" />
-    <h3>title</h3>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
-    </p>
-    <div class="shopping-car">
-      <!-- 要讓user可以選擇加入購物車的商品數量 -->
-      <button class="add-car">加入購物車</button>
-      <span class="now-stock">目前庫存：</span>
+    <div class="commodity-item">
+      <img src="https://picsum.photos/300/200?random=5" />
+      <h3>title</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
+      </p>
+      <div class="shopping-car">
+        <!-- 要讓user可以選擇加入購物車的商品數量 -->
+        <button class="add-car">加入購物車</button>
+        <span class="now-stock">目前庫存：</span>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 <!-- 可編輯區-end -->
 
 <!-- footer -->
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-col">
-      <ul>
-        <li><h4>company</h4></li>
-        <li><a href="#">about us</a></li>
-        <li><a href="#">our services</a></li>
-        <li><a href="#">privacy policy</a></li>
-        <li><a href="#">affiliate program</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <ul>
-        <li><h4>get help</h4></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">shipping</a></li>
-        <li><a href="#">returns</a></li>
-        <li><a href="#">order status</a></li>
-        <li><a href="#">payment options</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <ul>
-        <li><h4>online shop</h4></li>
-        <li><a href="#">watch</a></li>
-        <li><a href="#">bag</a></li>
-        <li><a href="#">shoes</a></li>
-        <li><a href="#">dress</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <div class="social-links">
-        <h4>follow us</h4>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitch"></i></a>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <ul>
+          <li><h4>company</h4></li>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">affiliate program</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li><h4>get help</h4></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">payment options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li><h4>online shop</h4></li>
+          <li><a href="#">watch</a></li>
+          <li><a href="#">bag</a></li>
+          <li><a href="#">shoes</a></li>
+          <li><a href="#">dress</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <h4>follow us</h4>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitch"></i></a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
+  </main>
 </body>
 </html>

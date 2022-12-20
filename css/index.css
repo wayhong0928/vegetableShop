@@ -96,18 +96,12 @@ header{
 }
 /* 電腦螢幕 1024-1*/
 @media screen and (min-width:1023px) {
-  header {
-    width: 100%;
-    margin-left: 150px;
-  }
-  .commodity-wrap {
-    margin-left: 300px;
-    margin-right: auto;
+  header, section, footer {
+    margin: auto;
   }
 }
 /* commodity */
 .commodity-wrap {
-  /* width: clamp(200px, 100%, 1600px); */
   max-width: 1600px;
   background-color: #eee;
   display: flex;
@@ -116,11 +110,14 @@ header{
   text-align: center;
   left: 50%;
   right: 50%;
-  /* margin: auto; */
 }
 .commodity-item {
   width: clamp(200px, 100%, 380px);
   margin: 10px;
+  /* 商品列的背景圖案  僅供排版參考 */
+  background-color: rgba(140, 210, 140, 0.7);
+  padding: 20px;
+  border-radius: 20%;
 }
 .shopping-car {
   display: flex;
