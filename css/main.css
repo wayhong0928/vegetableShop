@@ -22,6 +22,7 @@ aside {
 }
 main {
   width: 100%;
+  position: relative;
 }
 /* side-list-start */
 .side-menu {
