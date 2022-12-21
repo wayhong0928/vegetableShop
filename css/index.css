@@ -9,7 +9,7 @@ header{
   margin: 50px 0;
   max-width: 800px;
   max-height: 500px;
-  border-radius: 10px;
+  border-radius: 50px;
   overflow: hidden;
   position: relative;
 }
@@ -28,6 +28,7 @@ header{
 .slide img{
   width: 100%;
   height: 100%;
+  border-radius: 50px;
 }
 /* css for manual slide navigation */
 
@@ -41,7 +42,7 @@ header{
   justify-content: center;
 }
 .manual-btn{
-  border: 2px solid #40D3DC; /*按鈕框線顏色*/
+  border: 2px solid rgba(140, 210, 140, 0.7); /*按鈕框線顏色*/
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -51,7 +52,7 @@ header{
   margin-right: 40px;
 }
 .manual-btn:hover{
-  background-color: #40D3DC; /*按鈕選取後顯示顏色*/
+  background-color: rgba(140, 210, 140, 0.7); /*按鈕選取後顯示顏色*/
 }
 #radio1:checked ~ .first{
   margin-left: 0;
@@ -78,7 +79,7 @@ header{
 }
 
 .navigation-auto div{
-  border: 2px solid #40D3DC;
+  border: 2px solid rgba(140, 210, 140, 0.7);
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
@@ -92,7 +93,7 @@ header{
 #radio3:checked ~ .navigation-auto .auto-btn3,
 #radio4:checked ~ .navigation-auto .auto-btn4
 {
-  background: #40D3DC;
+  background: rgba(140, 210, 140, 0.7);
 }
 /* 電腦螢幕 1024-1*/
 @media screen and (min-width:1023px) {
@@ -119,12 +120,43 @@ header{
   padding: 20px;
   border-radius: 20%;
 }
+.commodity-item img {
+  width: 100%;
+  border-radius: 20%;
+}
 .shopping-car {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  margin-top: 10px;
 }
-.commodity-item img {
+.shopping-car button, 
+.shopping-car .now-stock,
+.shopping-car .choice-number {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #eeeeee;
+}
+.shopping-car button {
+  border: 0;
+}
+.choice-number{
+  height: 30px; /*選取按鈕高*/
+  min-width: 80px; /*選取按鈕寬*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.choice-number span{
   width: 100%;
-  border-radius: 20px;
+  text-align: center;
+  font-size: 18px; /*- + 數字 大小*/
+  cursor: pointer;
+}
+.choice-number span.num{
+  font-size: 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.2); /*+與數字之間線的顏色*/
+  border-left: 1px solid rgba(0, 0, 0, 0.2); /*-與數字之間線的顏色*/
+  pointer-events: none;
 }

@@ -28,6 +28,7 @@ main {
   position: fixed;
   z-index: 10;
   padding: 50px 0;
+  font-size: 20px;
   background-color: rgba(100, 200, 100, 0.9);
   display: flex;
   flex-direction: column;
@@ -48,6 +49,7 @@ main {
   border: none;
   background-color: transparent;
   color: #fff;
+  font-size: 18px;
   padding: 5px 10px;
 }
 /* 選取到不會顯示那個外框 */
@@ -81,7 +83,6 @@ main {
   margin: auto;
   line-height: 80px;
   text-align: center;
-  font-size: 20px;
   border-radius: 0 10px 10px 0;
 }
 #side-menu-switch {
@@ -96,13 +97,6 @@ main {
 /* 讓箭頭可以轉向 */
 #side-menu-switch:checked + .side-menu label .fa-greater-than {
   transform: scale(-1);
-}
-.nav a {
-  display: block;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
-  position: relative;
 }
 .nav li {
   position: relative;
@@ -123,17 +117,23 @@ main {
   margin-top: -20px;
   margin-bottom: 20px;
 }
+.nav li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 0;
+}
+.nav li span {
+  line-height: 2;
+}
 .nav li p {
-  color: #eeeeee;
-  padding-right: 20px;
+  color: #fff;
 }
-.nav li img {
-  width: 70px;
-  height: 70px;
+.nav li img, .nav li i {
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
-}
-.nav a .fa-solid {
-  margin: 0 10px;
+  margin: 10px 10px 0 10px;
 }
 @media screen and (min-width:1023px) {
   input, ul {
@@ -158,6 +158,10 @@ main {
   }
   .nav li:hover > a {
     background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav li img, .nav li i {
+    width: 50px;
+    height: 50px;
   }
 }
 /* side-list-end */
