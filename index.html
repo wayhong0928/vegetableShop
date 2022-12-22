@@ -11,9 +11,6 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/index.css">
 <title>Vegetable Shop</title>
-<style>
-
-</style>
 </head>
 <body>
   <input type="checkbox" name="" id="side-menu-switch" />
@@ -32,25 +29,13 @@
       <li>
         <a href="index.html"><img class="fa-solid" src="images/home.png"></img><span>回到首頁</span></a>
       </li>
-      <!-- 瀏覽熱賣商品、最新上架商品等等 -->
-      <li>
-        <a href="#"><img class="fa-solid" src="images/commodity.png"></img><span>商品瀏覽</span></a>
-      </li>
       <!-- 加入購物車的清單然後讓user可以結帳 -->
       <li>
         <a href="#"><img class="fa-solid" src="images/shopping-cart.png"></img><span>購物車</span></a>
       </li>
-      <!-- 就...查詢訂單進度 -->
-      <li>
-        <a href="#"><img class="fa-solid" src="images/order.png"></img><span>訂單查詢</span></a>
-      <li>
-      <!-- 購物流程說明、配送說明 -->
-      <li>
-        <a href="#"><img class="fa-solid" src="images/qa.png"></img><span>常見問題</span></a>
-      </li>
       <!-- 列出前後端組員、系級姓名、簡介與心得 -->
       <li>
-        <a href="#"><img class="fa-solid" src="images/about-us.png"></img><span>關於我們</span></a>
+        <a href="about.html"><img class="fa-solid" src="images/about-us.png"></img><span>關於我們</span></a>
       </li>
       </li>
        <!-- 連結到會員管理介面，包含改名字、頭貼、密碼、電子信箱、手機號碼等等 -->
@@ -59,9 +44,10 @@
       </li>
       <!-- 登入前顯示「登入/註冊」，會員登入後顯示「登出」，不知道有沒有辦法做到(？ -->
       <li>
-        <a href="#"><i class="fa-solid"></i><span>會員登入/註冊(登出)</span></a>
+        <a href="login.html"><i class="fa-solid"></i><span>會員登入/註冊(登出)</span></a>
       </li>
     </ul>
+    <!-- 要找><的icon -->
     <label for="side-menu-switch">
       <i class="fa-solid fa-greater-than"></i>
     </label>
@@ -124,114 +110,211 @@
 
   <!-- 可編輯區-start -->
   <!-- commodity-wrap 後端處理 -->
-  <section class="commodity-wrap">
+  <!-- 
+    已知問題：數量加減只對第一個item有效果（搭配JS服用）；加入購物車的按鈕看似失效。
+   -->
+<template>
+  <!-- 包住整個commodity-wrap -->
+</template>
+<!-- 熱銷排行 img找一個跟排行榜相關的icon-->
+<h2><img src="">熱銷排行榜</h2>
+<section class="commodity-wrap">
+    <!-- 一個item是一個商品 -->
     <div class="commodity-item">
+      <!-- 商品圖片 -->
       <img src="https://picsum.photos/300/200?random=1" />
-      <h3>title</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
-      </p>
-      <div class="shopping-car">
-        <div class="choice-number">
-          <span class="minus">-</span>
-          <span class="num">01</span>
-          <span class="plus">+</span>
-        </div>
-        <button class="add-car">加入購物車</button>
-        <p class="now-stock">目前庫存：<span></span></p>
-      </div>
+      <!-- 商品名稱 -->
+      <article>
+        <h3>title</h3>
+        <!-- 商品敘述 -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
+        </p>
+      </article>
+      <!-- 商品售價與庫存 -->
+      <article>
+        <!-- 商品售價 -->
+        <p class="price">售價：$<span></span></p>
+        <!-- 更多資訊 -->
+        <button><a href="#">更多資訊</a></button>
+      </article>
     </div>
     <div class="commodity-item">
+      <!-- 商品圖片 -->
       <img src="https://picsum.photos/300/200?random=2" />
-      <h3>title</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
-      </p>
-      <div class="shopping-car">
-        <div class="choice-number">
-          <span class="minus">-</span>
-          <span class="num">01</span>
-          <span class="plus">+</span>
-        </div>
-        <button class="add-car">加入購物車</button>
-        <!-- 目前庫存的數字要加上 -->
-        <p class="now-stock">目前庫存：<span></span></p>
-      </div>
+      <!-- 商品名稱 -->
+      <article>
+        <h3>title</h3>
+        <!-- 商品敘述 -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
+        </p>
+      </article>
+      <!-- 商品售價與庫存 -->
+      <article>
+        <!-- 商品售價 -->
+        <p class="price">售價：$<span></span></p>
+        <!-- 更多資訊 -->
+        <button><a href="#">更多資訊</a></button>
+      </article>
     </div>
     <div class="commodity-item">
+      <!-- 商品圖片 -->
       <img src="https://picsum.photos/300/200?random=3" />
-      <h3>title</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
-      </p>
-      <div class="shopping-car">
-        <div class="choice-number">
-          <span class="minus">-</span>
-          <span class="num">01</span>
-          <span class="plus">+</span>
-        </div>
-        <button class="add-car">加入購物車</button>
-        <!-- 目前庫存的數字要加上 -->
-        <p class="now-stock">目前庫存：<span></span></p>
-      </div>
+      <!-- 商品名稱 -->
+      <article>
+        <h3>title</h3>
+        <!-- 商品敘述 -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
+        </p>
+      </article>
+      <!-- 商品售價與庫存 -->
+      <article>
+        <!-- 商品售價 -->
+        <p class="price">售價：$<span></span></p>
+        <!-- 更多資訊 -->
+        <button><a href="#">更多資訊</a></button>
+      </article>
     </div>
     <div class="commodity-item">
+      <!-- 商品圖片 -->
       <img src="https://picsum.photos/300/200?random=4" />
-      <h3>title</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
-      </p>
-      <div class="shopping-car">
-        <div class="choice-number">
-          <span class="minus">-</span>
-          <span class="num">01</span>
-          <span class="plus">+</span>
-        </div>
-        <button class="add-car">加入購物車</button>
-        <!-- 目前庫存的數字要加上 -->
-        <p class="now-stock">目前庫存：<span></span></p>
-      </div>
+      <!-- 商品名稱 -->
+      <article>
+        <h3>title</h3>
+        <!-- 商品敘述 -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
+        </p>
+      </article>
+      <!-- 商品售價與庫存 -->
+      <article>
+        <!-- 商品售價 -->
+        <p class="price">售價：$<span></span></p>
+        <!-- 更多資訊 -->
+        <button><a href="#">更多資訊</a></button>
+      </article>
     </div>
     <div class="commodity-item">
+      <!-- 商品圖片 -->
       <img src="https://picsum.photos/300/200?random=5" />
-      <h3>title</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
-      </p>
-      <div class="shopping-car">
-        <div class="choice-number">
-          <span class="minus">-</span>
-          <span class="num">01</span>
-          <span class="plus">+</span>
-        </div>
-        <button class="add-car">加入購物車</button>
-        <!-- 目前庫存的數字要加上 -->
-        <p class="now-stock">目前庫存：<span></span></p>
-      </div>
+      <!-- 商品名稱 -->
+      <article>
+        <h3>title</h3>
+        <!-- 商品敘述 -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
+        </p>
+      </article>
+      <!-- 商品售價與庫存 -->
+      <article>
+        <!-- 商品售價 -->
+        <p class="price">售價：$<span></span></p>
+        <!-- 更多資訊 -->
+        <button><a href="#">更多資訊</a></button>
+      </article>
     </div>
-  </section>
-  <!-- add shop number -->
-  <script>
-    const plus = document.querySelector(".plus"),
-      minus = document.querySelector(".minus"),
-      num = document.querySelector(".num");
-    let a = 1;
-
-    plus.addEventListener("click", ()=>{
-      a++;
-      a = (a < 10) ? "0" + a : a;
-      num.innerText = a;
-      console.log(a);
-    })
-
-    minus.addEventListener("click", ()=>{
-      if(a > 1){
-          a--;
-          a = (a < 10) ? "0" + a : a;
-          num.innerText = a;
-      }
-    })
-  </script>
+</section>
+<h2><img src="">所有商品</h2>
+<section class="commodity-wrap">
+    <!-- 一個item是一個商品 -->
+    <div class="commodity-item">
+      <!-- 商品圖片 -->
+      <img src="https://picsum.photos/300/200?random=1" />
+      <!-- 商品名稱 -->
+      <article>
+        <h3>title</h3>
+        <!-- 商品敘述 -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
+        </p>
+      </article>
+      <!-- 商品售價與庫存 -->
+      <article>
+        <!-- 商品售價 -->
+        <p class="price">售價：$<span></span></p>
+        <!-- 更多資訊 -->
+        <button><a href="#">更多資訊</a></button>
+      </article>
+    </div>
+    <div class="commodity-item">
+      <!-- 商品圖片 -->
+      <img src="https://picsum.photos/300/200?random=2" />
+      <!-- 商品名稱 -->
+      <article>
+        <h3>title</h3>
+        <!-- 商品敘述 -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
+        </p>
+      </article>
+      <!-- 商品售價與庫存 -->
+      <article>
+        <!-- 商品售價 -->
+        <p class="price">售價：$<span></span></p>
+        <!-- 更多資訊 -->
+        <button><a href="#">更多資訊</a></button>
+      </article>
+    </div>
+    <div class="commodity-item">
+      <!-- 商品圖片 -->
+      <img src="https://picsum.photos/300/200?random=3" />
+      <!-- 商品名稱 -->
+      <article>
+        <h3>title</h3>
+        <!-- 商品敘述 -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
+        </p>
+      </article>
+      <!-- 商品售價與庫存 -->
+      <article>
+        <!-- 商品售價 -->
+        <p class="price">售價：$<span></span></p>
+        <!-- 更多資訊 -->
+        <button><a href="#">更多資訊</a></button>
+      </article>
+    </div>
+    <div class="commodity-item">
+      <!-- 商品圖片 -->
+      <img src="https://picsum.photos/300/200?random=4" />
+      <!-- 商品名稱 -->
+      <article>
+        <h3>title</h3>
+        <!-- 商品敘述 -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
+        </p>
+      </article>
+      <!-- 商品售價與庫存 -->
+      <article>
+        <!-- 商品售價 -->
+        <p class="price">售價：$<span></span></p>
+        <!-- 更多資訊 -->
+        <button><a href="#">更多資訊</a></button>
+      </article>
+    </div>
+    <div class="commodity-item">
+      <!-- 商品圖片 -->
+      <img src="https://picsum.photos/300/200?random=5" />
+      <!-- 商品名稱 -->
+      <article>
+        <h3>title</h3>
+        <!-- 商品敘述 -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, at.
+        </p>
+      </article>
+      <!-- 商品售價與庫存 -->
+      <article>
+        <!-- 商品售價 -->
+        <p class="price">售價：$<span></span></p>
+        <!-- 更多資訊 -->
+        <button><a href="#">更多資訊</a></button>
+      </article>
+    </div>
+</section>
 <!-- 可編輯區-end -->
 
 <!-- footer -->

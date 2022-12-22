@@ -101,6 +101,13 @@ header{
     margin: auto;
   }
 }
+h2 {
+  text-align: center;
+  color: #f00;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
 /* commodity */
 .commodity-wrap {
   max-width: 1600px;
@@ -118,45 +125,25 @@ header{
   /* 商品列的背景圖案  僅供排版參考 */
   background-color: rgba(140, 210, 140, 0.7);
   padding: 20px;
-  border-radius: 20%;
+  border-radius: 50px;
 }
 .commodity-item img {
   width: 100%;
-  border-radius: 20%;
+  border-radius: 20px;
 }
-.shopping-car {
+.commodity-item article {
   display: flex;
-  justify-content: space-around;
-  text-align: center;
-  margin-top: 10px;
-}
-.shopping-car button, 
-.shopping-car .now-stock,
-.shopping-car .choice-number {
-  padding: 5px 10px;
-  border-radius: 10px;
-  background-color: #eeeeee;
-}
-.shopping-car button {
-  border: 0;
-}
-.choice-number{
-  height: 30px; /*選取按鈕高*/
-  min-width: 80px; /*選取按鈕寬*/
-  display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
+  margin: 20px 0;
+}
+.commodity-item article button {
+  padding: 5px;
+  margin-left: 15%;
+  border: 0;
   border-radius: 10px;
 }
-.choice-number span{
-  width: 100%;
-  text-align: center;
-  font-size: 18px; /*- + 數字 大小*/
-  cursor: pointer;
-}
-.choice-number span.num{
-  font-size: 20px;
-  border-right: 1px solid rgba(0, 0, 0, 0.2); /*+與數字之間線的顏色*/
-  border-left: 1px solid rgba(0, 0, 0, 0.2); /*-與數字之間線的顏色*/
-  pointer-events: none;
+.commodity-item article button a {
+  text-decoration: none;
+  color: #000;
 }
