@@ -111,8 +111,8 @@ h2 {
 }
 /* commodity */
 .commodity-wrap {
-  max-width: 1600px;
-  background-color: #eee;
+  max-width: 1500px;
+  background-color: rgba(200, 255, 200, 0.5);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -123,10 +123,9 @@ h2 {
 .commodity-item {
   width: clamp(200px, 100%, 380px);
   margin: 10px;
-  /* 商品列的背景圖案  僅供排版參考 */
-  background-color: rgba(140, 210, 140, 0.7);
+  border: 3px solid rgba(100, 150, 100, 1);
   padding: 20px;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 .commodity-item img {
   width: 100%;
@@ -139,6 +138,9 @@ h2 {
   margin: 20px 0;
 }
 .commodity-item article button {
+  /* background-color: transparent; */
+  background-color: rgba(200, 255, 200, 0.5);
+  border: 1px solid rgba(100, 150, 100, 1);
   padding: 5px;
   margin-left: 15%;
   border: 0;
