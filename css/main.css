@@ -15,7 +15,7 @@ body {
   width: 100%;
   min-height: 100%;
   display: flex;
-  background-color: #eeeeee;
+  background-color: rgba(200, 255, 200, 0.3);
 }
 aside {
   width: 300px;
@@ -230,13 +230,17 @@ ul{
   color: #ffffff; /*icon顏色*/
   transition: all 0.5s ease;
 }
+.copyright {
+  color: #ffffff;
+  text-align: center;
+}
 
 @media screen and (min-width:1023px) {
   .footer {
     transition: 0.3s;
   }
   .footer-col{
-    max-width: 25%;
+    max-width: 50%;
     margin: 0 0 30px 0;
   }
   .footer-col ul li a:hover{
