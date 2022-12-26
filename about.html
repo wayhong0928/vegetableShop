@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 引入icon的JS檔案，把icon下載成圖片檔後上傳就可以把那些怪怪的class名稱移除 -->
+  <!-- 引入icon的JS檔案 -->
   <script
     src="https://kit.fontawesome.com/8d21a50c85.js"crossorigin="anonymous">
   </script>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/about.css">
 <title>Vegetable Shop</title>
-
 </head>
 <body>
 <!-- side-list-start -->
@@ -23,6 +22,7 @@
       <button><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
     <ul class="nav">
+      <!-- <template> 讓後端上傳目前登入的user姓名與頭貼 -->
       <li>
         <!-- user image -->
         <p>歡迎回來，<span>user</span></p>
@@ -43,11 +43,11 @@
       </li>
        <!-- 連結到會員管理介面，包含改名字、頭貼、密碼、電子信箱、手機號碼等等 -->
       <li>
-        <a href="#"><img class="fa-solid" src="images/member.png"></img><span>會員管理</span></a>
+        <a href="member.html"><img class="fa-solid" src="images/member.png"></img><span>會員管理</span></a>
       </li>
       <!-- 登入前顯示「登入/註冊」，會員登入後顯示「登出」，不知道有沒有辦法做到(？ -->
       <li>
-        <a href="#"><i class="fa-solid"></i><span>會員登入/註冊(登出)</span></a>
+        <a href="login.html"><i class="fa-solid"></i><span>會員登入/註冊</span></a>
       </li>
     </ul>
   </div>
@@ -73,7 +73,7 @@
         </div>
       </div>
       <div class="item">
-        <img src="https://picsum.photos/300/300?random=2">
+        <img src="https://picsum.photos/400/300?random=2">
         <div class="text">
           <h2>name</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, culpa.</p>
@@ -88,6 +88,20 @@
       </div>
       <div class="item">
         <img src="https://picsum.photos/300/300?random=4">
+        <div class="text">
+          <h2>name</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, culpa.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/300/300?random=5">
+        <div class="text">
+          <h2>name</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, culpa.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/300/300?random=5">
         <div class="text">
           <h2>name</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, culpa.</p>

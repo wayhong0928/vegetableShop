@@ -4,15 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 引入icon的JS檔案，把icon下載成圖片檔後上傳就可以把那些怪怪的class名稱移除 -->
+  <!-- 引入icon的JS檔案 -->
   <script
     src="https://kit.fontawesome.com/8d21a50c85.js"crossorigin="anonymous">
   </script>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/login.css">
 <title>Vegetable Shop</title>
-<style>
-</style>
 </head>
 <body>
 <!-- side-list-start -->
@@ -24,6 +22,7 @@
       <button><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
     <ul class="nav">
+      <!-- <template> 讓後端上傳目前登入的user姓名與頭貼 -->
       <li>
         <!-- user image -->
         <p>歡迎回來，<span>user</span></p>
@@ -33,34 +32,22 @@
       <li>
         <a href="index.html"><img class="fa-solid" src="images/home.png"></img><span>回到首頁</span></a>
       </li>
-      <!-- 瀏覽熱賣商品、最新上架商品等等 -->
-      <li>
-        <a href="#"><img class="fa-solid" src="images/commodity.png"></img><span>商品瀏覽</span></a>
-      </li>
       <!-- 加入購物車的清單然後讓user可以結帳 -->
       <li>
         <a href="#"><img class="fa-solid" src="images/shopping-cart.png"></img><span>購物車</span></a>
       </li>
-      <!-- 就...查詢訂單進度 -->
-      <li>
-        <a href="#"><img class="fa-solid" src="images/order.png"></img><span>訂單查詢</span></a>
-      <li>
-      <!-- 購物流程說明、配送說明 -->
-      <li>
-        <a href="#"><img class="fa-solid" src="images/qa.png"></img><span>常見問題</span></a>
-      </li>
       <!-- 列出前後端組員、系級姓名、簡介與心得 -->
       <li>
-        <a href="#"><img class="fa-solid" src="images/about-us.png"></img><span>關於我們</span></a>
+        <a href="about.html"><img class="fa-solid" src="images/about-us.png"></img><span>關於我們</span></a>
       </li>
       </li>
        <!-- 連結到會員管理介面，包含改名字、頭貼、密碼、電子信箱、手機號碼等等 -->
       <li>
-        <a href="#"><img class="fa-solid" src="images/member.png"></img><span>會員管理</span></a>
+        <a href="member.html"><img class="fa-solid" src="images/member.png"></img><span>會員管理</span></a>
       </li>
       <!-- 登入前顯示「登入/註冊」，會員登入後顯示「登出」，不知道有沒有辦法做到(？ -->
       <li>
-        <a href="#"><i class="fa-solid"></i><span>會員登入/註冊(登出)</span></a>
+        <a href="login.html"><i class="fa-solid"></i><span>會員登入/註冊</span></a>
       </li>
     </ul>
   </div>
@@ -92,7 +79,7 @@
         <div class="pass">Forgot Password?</div>
         <input type="submit" value="Login">
         <div class="signup_link">
-            Not a member? <a href="#">Signup</a>
+            Not a member? <a href="registration.html">Signup</a>
         </div>
     </form>
 </section>

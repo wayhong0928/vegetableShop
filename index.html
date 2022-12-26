@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 引入icon的JS檔案，把icon下載成圖片檔後上傳就可以把side那些怪怪的class名稱移除 -->
+  <!-- 引入icon的JS檔案-->
   <script
     src="https://kit.fontawesome.com/8d21a50c85.js"crossorigin="anonymous">
   </script>
@@ -15,39 +15,42 @@
 <body>
   <input type="checkbox" name="" id="side-menu-switch" />
   <aside class="side-menu">
-    <form action="">
-      <input type="search" placeholder="請輸入關鍵字" />
-      <button><i class="fa-solid fa-magnifying-glass"></i></button>
-    </form>
-    <ul class="nav">
-      <li>
-        <!-- user image -->
-        <p>歡迎回來，<span>user</span></p>
-        <img src="https://picsum.photos/70/70?random=1">
-      </li>
-      <!-- 回去index.html -->
-      <li>
-        <a href="index.html"><img class="fa-solid" src="images/home.png"></img><span>回到首頁</span></a>
-      </li>
-      <!-- 加入購物車的清單然後讓user可以結帳 -->
-      <li>
-        <a href="#"><img class="fa-solid" src="images/shopping-cart.png"></img><span>購物車</span></a>
-      </li>
-      <!-- 列出前後端組員、系級姓名、簡介與心得 -->
-      <li>
-        <a href="about.html"><img class="fa-solid" src="images/about-us.png"></img><span>關於我們</span></a>
-      </li>
-      </li>
-       <!-- 連結到會員管理介面，包含改名字、頭貼、密碼、電子信箱、手機號碼等等 -->
-      <li>
-        <a href="#"><img class="fa-solid" src="images/member.png"></img><span>會員管理</span></a>
-      </li>
-      <!-- 登入前顯示「登入/註冊」，會員登入後顯示「登出」，不知道有沒有辦法做到(？ -->
-      <li>
-        <a href="login.html"><i class="fa-solid"></i><span>會員登入/註冊(登出)</span></a>
-      </li>
-    </ul>
-    <!-- 要找><的icon -->
+    <div class="side-fixed">
+      <form action="">
+        <input type="search" placeholder="請輸入關鍵字" />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <ul class="nav">
+        <!-- <template> 讓後端上傳目前登入的user姓名與頭貼 -->
+        <li>
+          <!-- user image -->
+          <p>歡迎回來，<span>user</span></p>
+          <img src="https://picsum.photos/70/70?random=1">
+        </li>
+        <!-- 回去index.html -->
+        <li>
+          <a href="index.html"><img class="fa-solid" src="images/home.png"></img><span>回到首頁</span></a>
+        </li>
+        <!-- 加入購物車的清單然後讓user可以結帳 -->
+        <li>
+          <a href="#"><img class="fa-solid" src="images/shopping-cart.png"></img><span>購物車</span></a>
+        </li>
+        <!-- 列出前後端組員、系級姓名、簡介與心得 -->
+        <li>
+          <a href="about.html"><img class="fa-solid" src="images/about-us.png"></img><span>關於我們</span></a>
+        </li>
+        </li>
+         <!-- 連結到會員管理介面，包含改名字、頭貼、密碼、電子信箱、手機號碼等等 -->
+        <li>
+          <a href="member.html"><img class="fa-solid" src="images/member.png"></img><span>會員管理</span></a>
+        </li>
+        <!-- 登入前顯示「登入/註冊」，會員登入後顯示「登出」，不知道有沒有辦法做到(？ -->
+        <li>
+          <a href="login.html"><i class="fa-solid"></i><span>會員登入/註冊</span></a>
+        </li>
+      </ul>
+    </div>
+    <!-- side-menu的按鈕 -->
     <label for="side-menu-switch">
       <i class="fa-solid fa-greater-than"></i>
     </label>
@@ -65,16 +68,16 @@
 
             <!-- 滑動 圖片 -->
             <div class="slide first">
-              <img src="https://picsum.photos/800/400?random=1">
+              <img src="images/ads2.jpg">
             </div>
             <div class="slide">
-              <img src="https://picsum.photos/800/400?random=2">
+              <img src="images/ads2.jpg">
             </div>
             <div class="slide">
-              <img src="https://picsum.photos/800/400?random=3">
+              <img src="images/ads2.jpg">
             </div>
             <div class="slide">
-              <img src="https://picsum.photos/800/400?random=4">
+              <img src="images/ads2.jpg">
             </div>
 
             <!-- 自動切換 -->
