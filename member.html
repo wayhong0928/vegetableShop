@@ -9,7 +9,7 @@
     src="https://kit.fontawesome.com/8d21a50c85.js"crossorigin="anonymous">
   </script>
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/member.css">
 <title>Vegetable Shop</title>
 </head>
 <body>
@@ -60,28 +60,25 @@
 
 <!-- 可編輯區-start -->
 <main>
-  <!-- header可加廣告or其他動畫效果? 也可不用 -->
-  <header></header>
   <!-- scection 內放主要內容 -->
-  <section class="center">
-    <h1>Login</h1>
-    <form method="post">
-        <div class="txt_field">
-            <input type="text" required>
-            <span></span>
-            <label>Username</label>
-        </div>
-        <div class="txt_field">
-            <input type="password" required>
-            <span></span>
-            <label>Password</label>
-        </div>
-        <div class="pass">Forgot Password?</div>
-        <input type="submit" value="Login">
-        <div class="signup_link">
-            Not a member? <a href="registration.html">Signup</a>
-        </div>
-    </form>
+  <section class="member-container">
+    <div class="member-leftbox"></div> <!-- 側邊條 -->
+    <div class="member-rightbox">
+        <div class="member-profile tabShow">
+            <h1>Personal Info</h1>
+            <h2>Full Name</h2>
+            <input type="text" class="input" value="Jane">
+            <h2>Username</h2>
+            <input type="text" class="input" value="ABC123">
+            <h2>Email</h2>
+            <input type="text" class="input" value="ABC123@gmail.com">
+            <h2>Password</h2>
+            <input type="password" class="input" value="12345678">
+            <h2>Gender</h2>
+            <input type="text" class="input" value="Male">
+            <button class="btn">Update</button>
+        </div> 
+    </div>
 </section>
   <!-- footer已完工 -->
   <footer class="footer">
@@ -94,7 +91,7 @@
           <li><a href="#">privacy policy</a></li>
           <li><a href="#">affiliate program</a></li>
         </ul>
-      </div>
+      </div> 
       <div class="footer-col">
         <ul>
           <li><h4>get help</h4></li>
@@ -120,12 +117,10 @@
           <a href="#"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitch"></i></a>
         </div>
       </div>
     </div>
   </footer>
 </main>
-
 </body>
 </html>

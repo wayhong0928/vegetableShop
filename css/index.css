@@ -9,7 +9,7 @@ header{
   margin: 50px 0;
   max-width: 800px;
   max-height: 500px;
-  border-radius: 10px;
+  border-radius: 50px;
   overflow: hidden;
   position: relative;
 }
@@ -26,8 +26,10 @@ header{
   transition: 2s;
 }
 .slide img{
-  width: 100%;
-  height: 100%;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  border-radius: 50px;
 }
 /* css for manual slide navigation */
 
@@ -41,7 +43,7 @@ header{
   justify-content: center;
 }
 .manual-btn{
-  border: 2px solid #40D3DC; /*按鈕框線顏色*/
+  border: 2px solid rgba(140, 210, 140, 0.7); /*按鈕框線顏色*/
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -51,7 +53,7 @@ header{
   margin-right: 40px;
 }
 .manual-btn:hover{
-  background-color: #40D3DC; /*按鈕選取後顯示顏色*/
+  background-color: rgba(140, 210, 140, 0.7); /*按鈕選取後顯示顏色*/
 }
 #radio1:checked ~ .first{
   margin-left: 0;
@@ -78,7 +80,7 @@ header{
 }
 
 .navigation-auto div{
-  border: 2px solid #40D3DC;
+  border: 2px solid rgba(140, 210, 140, 0.7);
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
@@ -92,22 +94,23 @@ header{
 #radio3:checked ~ .navigation-auto .auto-btn3,
 #radio4:checked ~ .navigation-auto .auto-btn4
 {
-  background: #40D3DC;
+  background: rgba(140, 210, 140, 0.7);
 }
 /* 電腦螢幕 1024-1*/
 @media screen and (min-width:1023px) {
-  header {
-    width: 100%;
-    margin-left: 150px;
+  header, section, footer {
+    margin: auto;
   }
-  .commodity-wrap {
-    margin-left: 300px;
-    margin-right: auto;
-  }
+}
+h2 {
+  text-align: center;
+  color: #f00;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 /* commodity */
 .commodity-wrap {
-  /* width: clamp(200px, 100%, 1600px); */
   max-width: 1600px;
   background-color: #eee;
   display: flex;
@@ -116,18 +119,32 @@ header{
   text-align: center;
   left: 50%;
   right: 50%;
-  /* margin: auto; */
 }
 .commodity-item {
   width: clamp(200px, 100%, 380px);
   margin: 10px;
-}
-.shopping-car {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
+  /* 商品列的背景圖案  僅供排版參考 */
+  background-color: rgba(140, 210, 140, 0.7);
+  padding: 20px;
+  border-radius: 50px;
 }
 .commodity-item img {
   width: 100%;
   border-radius: 20px;
+}
+.commodity-item article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+.commodity-item article button {
+  padding: 5px;
+  margin-left: 15%;
+  border: 0;
+  border-radius: 10px;
+}
+.commodity-item article button a {
+  text-decoration: none;
+  color: #000;
 }

@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 引入icon的JS檔案 -->
+  <!-- 引入icon的JS檔案-->
   <script
     src="https://kit.fontawesome.com/8d21a50c85.js"crossorigin="anonymous">
   </script>
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/registration.css">
 <title>Vegetable Shop</title>
 </head>
 <body>
@@ -60,27 +60,59 @@
 
 <!-- 可編輯區-start -->
 <main>
-  <!-- header可加廣告or其他動畫效果? 也可不用 -->
-  <header></header>
   <!-- scection 內放主要內容 -->
-  <section class="center">
-    <h1>Login</h1>
-    <form method="post">
-        <div class="txt_field">
-            <input type="text" required>
-            <span></span>
-            <label>Username</label>
+  <section class="container">
+    <div class="title">Registration</div>
+    <form action="#">
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Full Name</span>
+          <input type="text" placeholder="Enter your Name" required>
         </div>
-        <div class="txt_field">
-            <input type="password" required>
-            <span></span>
-            <label>Password</label>
+        <div class="input-box">
+          <span class="details">Username</span>
+          <input type="text" placeholder="Enter your Username" required>
         </div>
-        <div class="pass">Forgot Password?</div>
-        <input type="submit" value="Login">
-        <div class="signup_link">
-            Not a member? <a href="registration.html">Signup</a>
+        <div class="input-box">
+          <span class="details">Email</span>
+          <input type="text" placeholder="Enter your Email" required>
         </div>
+        <div class="input-box">
+          <span class="details">Phone Number</span>
+          <input type="text" placeholder="Enter your Phone Number" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Password</span>
+          <input type="text" placeholder="Enter your Password" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Confirm Password</span>
+          <input type="text" placeholder="Enter your Confirm Password" required>
+        </div>
+      </div>
+      <div class="gender-details">
+        <input type="radio" name="gender" id="dot-1">
+        <input type="radio" name="gender" id="dot-2">
+        <input type="radio" name="gender" id="dot-3">
+        <span class="gender-tilte">Gender</span>
+        <div class="category">
+          <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+          </label>
+        </div>
+      </div>
+      <div class="button">
+        <input type="submit" value="Register">
+      </div>
     </form>
 </section>
   <!-- footer已完工 -->
