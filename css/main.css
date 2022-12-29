@@ -138,6 +138,10 @@ main {
   margin: 0 10px;
 }
 @media screen and (min-width:1023px) {
+  .side-fixed {
+    top: 50px;
+    position: sticky;
+  }
   input, ul {
     font-size: 20px;
   }

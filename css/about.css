@@ -13,6 +13,10 @@
   transform: translateY(0px);
   transition: 0.5s;
 }
+.text {
+  color: #339933;
+  padding: 20px;
+}
 .item img {
   width: 100%;
   border-radius: 20px;
@@ -26,14 +30,11 @@
   transition: 0.5s;
 }
 .item p {
+  text-align: justify;
+  font-size: 18px;
   line-height: 1.5;
   font-weight: 500;
   transition: 0.5s;
-}
-.item .text {
-  position: relative;
-
-  padding: 20px;
 }
 .item .text:before {
   content: "";
@@ -50,13 +51,11 @@
   }
   .item:hover {
     transform: translateY(-50px);
-  }
-  .item:hover .text {
-    background-image: linear-gradient(0deg, #fb8076, #ffb85d);
+    background-color: rgba(100, 200, 100, 0.7);
     border-radius: 20px;
   }
   .item:hover h2 {
-    color: #fff;
+    color: #339933;
     border-bottom-color: #fff;
   }
   .item:hover p {

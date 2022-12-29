@@ -4,7 +4,7 @@
 .member-container{
   background: #fff; /*資料框背景顏色*/
   width: 80%;
-  height: 40%;
+  height: 50%;
   margin: 10% auto;
   position: relative;
   box-shadow: 2px 5px 20px rgba(119, 119, 119, .5); /*資料框影子*/
@@ -68,6 +68,7 @@
 }
 @media screen and (min-width:1023px) {
   .member-container {
+    max-width: 40%;
     max-width: 70%;
     min-height: 70%;
     margin: 5% auto;
