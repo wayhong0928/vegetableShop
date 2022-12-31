@@ -9,8 +9,45 @@
     src="https://kit.fontawesome.com/8d21a50c85.js"crossorigin="anonymous">
   </script>
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="empty-cart.css">
 <title>Vegetable Shop</title>
+<style>
+  section {
+    height: 500px;
+  }
+  .empty-cart-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .empty-cart-text h2 {
+    color: rgba(100, 200, 100, 1);
+    font-weight: 700px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .empty-cart-text a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: 3px solid rgba(50, 100, 50, 0.5);
+    border-radius: 20px;
+  }
+  @media screen and (min-width:1023px) {
+    section {
+      height: 60%;
+    }
+    .empty-cart-text h2 {
+      font-size: 32px;
+    }
+    .empty-cart-text a {
+      font-size: 20px;
+    }
+  }
+</style>
 </head>
 <body>
 <!-- side-list-start -->
@@ -57,68 +94,11 @@
 
 <!-- 可編輯區-start -->
 <main>
-  <!-- header可加廣告or其他動畫效果? 也可不用 -->
-  <header></header>
   <!-- scection 內放主要內容 -->
   <section>
-    <div class="wrap">
-      <div class="item">
-        <img src="https://picsum.photos/300/300?random=1">
-        <div class="text">
-          <h2>前端 - 資管二甲 黃恆嘉</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, culpa.</p>
-        </div>
-      </div>
-      <div class="item">
-        <img src="images/11044144.jpg">
-        <div class="text">
-          <h2>前端 - 資管二甲 陳威宏</h2>
-          <p>
-            只要伸手就能觸摸的CSShover效果相當吸引我，謝謝包容我的組員。
-            第一次利用分組實戰RWD功能，果然有團隊才能走得長遠。
-          </p>
-        </div>
-      </div>
-      <div class="item">
-        <img src="images/11044145.jpg">
-        <div class="text">
-          <h2>前端 - 資管二甲 陳秉庭</h2>
-          <p>
-            這次的前端網頁設計我對css和JavaScript的使用都還不太熟練，
-            但經過這次的專案後我也有慢慢的在進步，
-            除此之外我也了解到了要把網頁設計的好看是一件非常不容易的事，
-            希望未來我能夠多練習，讓我的技術持續進步。
-          </p>
-        </div>
-      </div>
-      <div class="item">
-        <img src="images/jay.jpg">
-        <div class="text">
-          <h2>後端 - 資管二乙 傅子杰</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, culpa.</p>
-        </div>
-      </div>
-      <div class="item">
-        <img src="images/S__11902989.jpg">
-        <div class="text">
-          <h2>後端 - 資管四乙 林心民</h2>
-          <p>雖然第一次修沒有過，但是這次重修真的了解到網程是非常實用的東西，希望以後可以帶著學習到的東西繼續努力下去。</p>
-        </div>
-      </div>
-      <div class="item">
-        <img src="https://picsum.photos/300/300?random=6">
-        <div class="text">
-          <h2>後端 - name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, culpa.</p>
-        </div>
-      </div>
-      <div class="item">
-        <img src="https://picsum.photos/300/300?random=7">
-        <div class="text">
-          <h2>後端 - name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, culpa.</p>
-        </div>
-      </div>
+    <div class="empty-cart-text">
+      <h2>您的購物車目前是空的！</h2>
+      <a href="index.html">繼續購物</a>
     </div>
   </section>
   <!-- footer已完工 -->
