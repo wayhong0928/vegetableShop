@@ -23,7 +23,7 @@
       <ul class="nav">
         <li>
           <!-- user name -->
-          <p>歡迎回來，<span>user</span></p>
+          <p>歡迎回來，<span>樂學猿</span></p>
         </li>
         <!-- 回去index.html -->
         <li>
@@ -31,7 +31,7 @@
         </li>
         <!-- 加入購物車的清單然後讓user可以結帳 -->
         <li>
-          <a href="empty-cart.html"><img class="fa-solid" src="images/shopping-cart.png"></img><span>購物車</span></a>
+          <a href="cart.html"><img class="fa-solid" src="images/shopping-cart.png"></img><span>購物車</span></a>
         </li>
         <!-- 列出前後端組員、系級姓名、簡介與心得 -->
         <li>
@@ -108,14 +108,32 @@
     </script>
     <!-- header-ads-end -->
 
-    <!-- 可編輯區-start -->
-    <template>  
-    <!-- 包住一個item給後端 -->
-    </template>
-
     <!-- 熱銷排行-->
     <h2>熱銷排行榜 TOP3</h2>
     <section class="commodity-wrap">
+      <!-- template給後端處理！請包在wrap裡面 -->
+      <template>
+        <!-- 一個item是一個商品 -->
+      <div class="commodity-item hot-sales">
+        <!-- span僅作為css處理用 -->
+        <span></span>
+        <!-- 商品圖片 -->
+        <img src="images/tomato.jpg" />
+        <!-- 商品名稱 -->
+        <a href="productInfo.html" class="more-information">更多資訊</a>
+        <article>
+          <h3>番茄</h3>
+          <!-- 商品敘述 -->
+          <p>
+            新鮮精選番茄，甜美多汁，富有維生素與膳食纖維
+          </p>
+          <p class="price">售價：$20</p>
+        </article>
+      </div>
+      </template>
+
+      <!-- 以下是前端顯示用，後端請刪除 -->
+
       <!-- 一個item是一個商品 -->
       <div class="commodity-item hot-sales">
         <!-- span僅作為css處理用 -->
@@ -123,7 +141,7 @@
         <!-- 商品圖片 -->
         <img src="images/tomato.jpg" />
         <!-- 商品名稱 -->
-        <a href="#" class="more-information">更多資訊</a>
+        <a href="productInfo.html" class="more-information">更多資訊</a>
         <article>
           <h3>番茄</h3>
           <!-- 商品敘述 -->
@@ -139,7 +157,7 @@
         <!-- 商品圖片 -->
         <img src="images/broccoli.jpg" />
         <!-- 商品名稱 -->
-        <a href="#" class="more-information">更多資訊</a>
+        <a href="productInfo.html" class="more-information">更多資訊</a>
         <article>
           <h3>花椰菜</h3>
           <!-- 商品敘述 -->
@@ -156,7 +174,7 @@
         <!-- 商品圖片 -->
         <img src="images/onion.jpg" />
         <!-- 商品名稱 -->
-        <a href="#" class="more-information">更多資訊</a>
+        <a href="productInfo.html" class="more-information">更多資訊</a>
         <article>
           <h3>洋蔥</h3>
           <!-- 商品敘述 -->
@@ -175,7 +193,7 @@
         <!-- 商品圖片 -->
         <img src="images/lemon.jpg" />
         <!-- 商品名稱 -->
-        <a href="#" class="more-information">更多資訊</a>
+        <a href="productInfo.html" class="more-information">更多資訊</a>
         <article>
           <h3>檸檬</h3>
           <!-- 商品敘述 -->
@@ -190,7 +208,7 @@
         <!-- 商品圖片 -->
         <img src="images/cucumber .jpg" />
         <!-- 商品名稱 -->
-        <a href="#" class="more-information">更多資訊</a>
+        <a href="productInfo.html" class="more-information">更多資訊</a>
         <article>
           <h3>黃瓜</h3>
           <!-- 商品敘述 -->
@@ -205,7 +223,7 @@
         <!-- 商品圖片 -->
         <img src="images/tomato.jpg" />
         <!-- 商品名稱 -->
-        <a href="#" class="more-information">更多資訊</a>
+        <a href="productInfo.html" class="more-information">更多資訊</a>
         <article>
           <h3>番茄</h3>
           <!-- 商品敘述 -->
@@ -220,7 +238,7 @@
         <!-- 商品圖片 -->
         <img src="images/onion.jpg" />
         <!-- 商品名稱 -->
-        <a href="#" class="more-information">更多資訊</a>
+        <a href="productInfo.html" class="more-information">更多資訊</a>
         <article>
           <h3>洋蔥</h3>
           <!-- 商品敘述 -->
@@ -235,7 +253,7 @@
         <!-- 商品圖片 -->
         <img src="images/chili.jpg" />
         <!-- 商品名稱 -->
-        <a href="#" class="more-information">更多資訊</a>
+        <a href="productInfo.html" class="more-information">更多資訊</a>
         <article>
           <h3>辣椒</h3>
           <!-- 商品敘述 -->
@@ -250,7 +268,7 @@
         <!-- 商品圖片 -->
         <img src="images/broccoli.jpg" />
         <!-- 商品名稱 -->
-        <a href="#" class="more-information">更多資訊</a>
+        <a href="productInfo.html" class="more-information">更多資訊</a>
         <article>
           <h3>花椰菜</h3>
           <!-- 商品敘述 -->
@@ -271,7 +289,7 @@
           <ul>
             <li><h4>Vegetable Shop</h4></li>
             <li><a href="index.html">回到首頁</a></li>
-            <li><a href="#">購物車</a></li>
+            <li><a href="cart.html">購物車</a></li>
             <li><a href="about.html">關於我們</a></li>
             <li><a href="member.html">會員管理</a></li>
           </ul>
