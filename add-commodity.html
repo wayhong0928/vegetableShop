@@ -11,8 +11,28 @@
   <link rel="stylesheet" href="css/main.css">
 <title>Vegetable Shop</title>
 <style>
-  header {
-    height: 1000px;
+  section {
+    width: 100%;
+    height: 600px;
+  }
+  table {
+    margin: 5% auto;
+  }
+  table tr {
+    margin: 10px 0;
+  }
+  table td {
+    padding: 10px;
+    margin: 10px;
+  }
+  .table-title {
+    width: 30%;
+  }
+  .output input{
+    width: 100%;
+    background-color: rgba(100, 255, 100, 0.5);
+    border: 0;
+    border-radius: 10px;
   }
 </style>
 </head>
@@ -34,10 +54,6 @@
       <li>
         <a href="index.html"><img class="fa-solid" src="images/home.png"></img><span>回到首頁</span></a>
       </li>
-      <!-- 加入購物車的清單然後讓user可以結帳 -->
-      <li>
-        <a href="cart.html"><img class="fa-solid" src="images/shopping-cart.png"></img><span>購物車</span></a>
-      </li>
       <!-- 列出前後端組員、系級姓名、簡介與心得 -->
       <li>
         <a href="about.html"><img class="fa-solid" src="images/about-us.png"></img><span>關於我們</span></a>
@@ -45,14 +61,6 @@
        <!-- 連結到會員管理介面，包含改名字、頭貼、密碼、電子信箱、手機號碼等等 -->
       <li>
         <a href="member.html"><img class="fa-solid" src="images/member.png"></img><span>會員管理</span></a>
-      </li>
-      <!-- 連結到商品上架的頁面，就可以上架商品囉^-^ -->
-      <li>
-        <a href="add-commodity.html"><img class="fa-solid" src="images/shopping-cart.png"></img><span>上架商品</span></a>
-      </li>
-      <!-- 登入前顯示「登入/註冊」，會員登入後顯示「登出」，不知道有沒有辦法做到(？ -->
-      <li>
-        <a href="login.html"><i class="fa-solid"></i><span>會員登入/註冊</span></a>
       </li>
     </ul>
   </div>
@@ -65,21 +73,67 @@
 
 <!-- 可編輯區-start -->
 <main>
-  <!-- header可加廣告or其他動畫效果? 也可不用 -->
-  <header></header>
   <!-- scection 內放主要內容 -->
-  <section></section>
-  <!-- footer已完工 -->
+  <section>
+    <form action="/add-commodity" method="post">
+      <table>
+        <tr>
+          <td class="table-title">商品圖片</td>
+          <td><input type="file" name="product-photo" id=""></td>
+        </tr>
+        <tr>
+          <td class="table-title">商品名稱</td>
+          <td><input type="text" name="product-name" id=""></td>
+        </tr>
+        <tr>
+          <td class="table-title">商品產地</td>
+          <td><input type="text" name="product-name" id=""></td>
+        </tr>
+        <tr>
+          <td class="table-title">保存期限</td>
+          <td><input type="date" name="product-time" id=""></td>
+        </tr>
+        <tr>
+          <td class="table-title">商品數量</td>
+          <td><input type="number" name="product-number" id=""></td>
+        </tr>
+        <tr>
+          <td class="table-title">價格</td>
+          <td><input type="number" name="product-price" id=""></td>
+        </tr>
+        <tr>
+          <td class="table-title">單位</td>
+          <td>
+            <select name="product-unit" id="">
+              <option>斤</option>
+              <option>個</option>
+              <option>顆</option>
+              <option>條</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="table-title">商品介紹</td>
+          <td>
+            <textarea name="product-info" rows="5" cols="40"></textarea>
+          </td>
+        </tr>
+        <tr class="output">
+          <td class="table-title"><input type="button" value="取消回首頁" onclick="location.href='index.html'" ></td>
+          <td><input type="button" value="上架商品囉！" onclick="location.href='update-success-.html'"></td>
+        </tr>
+      </table>
+    </form>
+  </section>
+
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-col">
         <ul>
           <li><h4>Vegetable Shop</h4></li>
           <li><a href="index.html">回到首頁</a></li>
-          <li><a href="cart.html">購物車</a></li>
           <li><a href="about.html">關於我們</a></li>
           <li><a href="member.html">會員管理</a></li>
-          <li><a href="add-commodity.html">上架商品</a></li>
         </ul>
       </div> 
       <div class="footer-col">
