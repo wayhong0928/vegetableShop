@@ -194,8 +194,16 @@ h2 {
   align-items: center;
   overflow: hidden;
 }
+.hot-sales:nth-child(1) span::before {
+  content: "TOP 1";
+}
+.hot-sales:nth-child(2) span::before {
+  content: "TOP 2";
+}
+.hot-sales:nth-child(3) span::before {
+  content: "hOP 3";
+}
 .hot-sales span::before {
-  content: "hot";
   position: absolute;
   width: 150%;
   height: 40px;
@@ -209,7 +217,8 @@ h2 {
   color: #ffffff;
   letter-spacing: 0.1em;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-} .hot-sales span::after {
+}
+.hot-sales span::after {
   content: "";
   position: absolute;
   bottom: 0;
