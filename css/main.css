@@ -100,7 +100,8 @@ main {
 #side-menu-switch:checked + .side-menu label .fa-greater-than {
   transform: scale(-1);
 }
-.nav li {
+.nav-li {
+  width: 100%;
   position: relative;
 }
 .nav li + li a::before {
