@@ -15,8 +15,8 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 15px 0;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 .cart-page .cart-title h2 {
   font-size: 20px;
@@ -34,7 +34,7 @@ span {
   align-items: center;
   justify-content: space-between;
   padding: 15px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ccc;
 }
 ul {
   list-style: none;
@@ -44,11 +44,18 @@ ul {
 .cart-page .item-wrap ul li.item-info {
   display: flex;
 }
-.cart-page .item-wrap ul li:first-child {
+.cart-page .item-wrap ul li.item-info {
   width: 60%;
 }
 .cart-page .item-wrap ul li {
   width: 20%;
+}
+
+.cart-page .item-wrap ul li.item-info .item-img{
+  width: 50%;
+}
+.cart-page .item-wrap ul li.item-info .item-title{
+  width: 50%;
 }
 
 a {
@@ -57,9 +64,12 @@ a {
   text-decoration: none;
   transition: all .2s ease-in-out 0s;
 }
-img, iframe {
+
+img {
   max-width: 100%;
+  object-fit: cover;
 }
+
 .cart-page .item-wrap ul li.item-info .item-title {
   margin-left: 15px;
 }
@@ -69,14 +79,10 @@ img, iframe {
   font-weight: 600;
 }
 
-.cart-page .item-wrap ul li.item-info .item-title a {
-  display: block;
-  font-size: 16px;
-  font-weight: 600;
-}
 .cart-page .item-wrap ul li.item-info .item-title span.item-option {
   display: block;
   margin-top: 5px;
+  font-size: 16px;
 }
 .cart-page .item-wrap ul li.item-info .item-title span.item-option span {
   font-weight: 600;
@@ -97,7 +103,7 @@ img, iframe {
 }
 .product-quantity .cart-plus-minus {
   display: flex;
-  border: 1px solid #eee;
+  border: 1px solid #ccc;
   max-width: 112px;
 }
 .product-quantity .cart-plus-minus .qtybutton {
@@ -110,7 +116,7 @@ img, iframe {
   cursor: pointer;
 }
 input, textarea, select {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #c5c5c5;
   max-width: 100%;
   padding: 8px 10px;
   border-radius: 3px;
@@ -123,8 +129,8 @@ input, textarea, select {
   text-align: center;
   border: none;
   border-radius: 0;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 .product-quantity .cart-plus-minus .qtybutton {
@@ -156,7 +162,7 @@ span.amount {
   align-items: center;
   justify-content: space-between;
   padding: 15px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ccc;
 }
 .btn-style1 {
   padding: 10px 30px;
@@ -170,7 +176,7 @@ span.amount {
 
 .cart-page .cart-total-wrap {
   padding: 15px;
-  background-color: #f7f7f7;
+  background-color: #f1f1f1;
   position: sticky;
   top: 0;
 }

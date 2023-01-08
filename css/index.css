@@ -5,6 +5,9 @@ header{
   justify-content: center;
   align-items: center;
 }
+section {
+  padding-bottom: 80px;
+}
 .slider{
   margin: 50px 0;
   max-width: 800px;
@@ -110,6 +113,10 @@ h2 {
   margin: 20px 0;
   letter-spacing: 10px;
 }
+.h2Adjust{
+  margin-top: 90px;
+}
+
 /* commodity */
 .commodity-wrap {
   max-width: 1500px;
@@ -201,7 +208,7 @@ h2 {
   content: "TOP 2";
 }
 .hot-sales:nth-child(3) span::before {
-  content: "hOP 3";
+  content: "TOP 3";
 }
 .hot-sales span::before {
   position: absolute;
